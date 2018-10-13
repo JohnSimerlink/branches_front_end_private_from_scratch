@@ -21,8 +21,6 @@
     "compression-webpack-plugin": "^2.0.0",
     "copy-webpack-plugin": "^4.4.1",
     "@babel/core": "^7.1.2",
-    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
-    "@babel/plugin-transform-async-to-generator": "^7.1.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
     "typescript": "^2.6.2",
