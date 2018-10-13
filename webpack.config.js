@@ -14,7 +14,7 @@ module.exports = {
 	entry: {
 		// regenerator: '@babel/plugin-transform-regenerator',
 		build: './app/core/bootstrap2.ts',
-		// vendor: './vendor.js',
+		vendor: './vendor.js',
 	},
 	output: {
 		path: path.resolve(__dirname, './dist'),
