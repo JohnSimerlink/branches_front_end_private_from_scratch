@@ -28,42 +28,42 @@ module.exports = {
 	module: {
 		rules: [
 			...ProductionAndTestConfig.rules,
-			// {
-			// 	test: /\.vue$/,
-			// 	loader: 'vue-loader',
-			// 	options: {
-			// 		loaders: {
-			// 			// Since sass-loader (weirdly) has SCSS as its default parse mode, we sourceMap
-			// 			// the "scss" and "sass" values for the lang attribute to the right configs here.
-			// 			// other preprocessors should work out of the box, no loader config like this necessary.
-			// 			'scss': 'vue-style-loader!css-loader!sass-loader',
-			// 			'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
-			// 		}          // other vue-loader options go here
-			// 	}
-			// },
-			// {
-			// 	test: /\.less$/,
-			// 	loader: "style-loader!css-loader!less-loader"
-			// },
-			// {
-			// 	test: /\.html$/,
-			// 	loader: 'html-loader?exportAsEs6Default',
-			// 	exclude: /node_modules/
-			// },
-			// {
-			// 	test: /\.(png|jpg|gif|svg)$/,
-			// 	loader: 'file-loader',
-			// 	options: {
-			// 		name: '[name].[ext]?[hash]'
-			// 	}
-			// },
-			// {
-			// 	test: /\.css$/,
-			// 	loader: 'css-loader',
-			// 	options: {
-			// 		name: '[name].[ext]?[hash]'
-			// 	}
-			// }
+			{
+				test: /\.vue$/,
+				loader: 'vue-loader',
+				options: {
+					loaders: {
+						// Since sass-loader (weirdly) has SCSS as its default parse mode, we sourceMap
+						// the "scss" and "sass" values for the lang attribute to the right configs here.
+						// other preprocessors should work out of the box, no loader config like this necessary.
+						'scss': 'vue-style-loader!css-loader!sass-loader',
+						'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+					}          // other vue-loader options go here
+				}
+			},
+			{
+				test: /\.less$/,
+				loader: "style-loader!css-loader!less-loader"
+			},
+			{
+				test: /\.html$/,
+				loader: 'html-loader?exportAsEs6Default',
+				exclude: /node_modules/
+			},
+			{
+				test: /\.(png|jpg|gif|svg)$/,
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]?[hash]'
+				}
+			},
+			{
+				test: /\.css$/,
+				loader: 'css-loader',
+				options: {
+					name: '[name].[ext]?[hash]'
+				}
+			}
 		]
 	},
 	resolve: {
